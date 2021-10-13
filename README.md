@@ -56,6 +56,25 @@ ping 127.0.0.1 | logformat "[Example] %H:%M:%S __BODY__ DONE."
 # ...
 ```
 
+## Compile from source
+Compilation require rust to be installed first, see [detail](https://www.rust-lang.org/learn/get-started).  
+About rust version:
+```bash
+> rustc --version
+rustc 1.55.0 (c8dfcfe04 2021-09-06)
+> cargo --version
+cargo 1.55.0 (32da73ab1 2021-08-23)
+```
+Then clone repo into a local directory
+```bash
+> git clone git@github.com:istobran/logformat.git
+```
+Build operations now are available to run:
+```bash
+> cargo run --release
+```
+Binary executable file will be generated to `target/release/logformat`
+
 ## License
 
 [GPLv3](https://opensource.org/licenses/GPL-3.0)
