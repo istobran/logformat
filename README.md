@@ -56,6 +56,35 @@ ping 127.0.0.1 | logformat "[Example] %H:%M:%S __BODY__ DONE."
 # ...
 ```
 
+## Installation
+Intel x86_64 based pre-compiled Binary has been provided to download directly.
+
+**Linux**:
+```bash
+# with curl
+curl -o /usr/local/bin/logformat -L https://github.com/istobran/logformat/releases/download/v0.1.0/logformat-linux-x86_64 && chmod +x /usr/local/bin/logformat
+# or with wget
+wget -O /usr/local/bin/logformat https://github.com/istobran/logformat/releases/download/v0.1.0/logformat-linux-x86_64 && chmod +x /usr/local/bin/logformat
+
+# uninstall
+rm -f /usr/local/bin/logformat
+```
+
+**macOS**:
+```bash
+curl -o /usr/local/bin/logformat -L https://github.com/istobran/logformat/releases/download/v0.1.0/logformat-macOS-x86_64 && chmod +x /usr/local/bin/logformat
+
+# uninstall
+rm -f /usr/local/bin/logformat
+```
+
+**Windows**:
+1. Go [Release](https://github.com/istobran/logformat/releases) page and download `logformat-windows-x86_64.exe`
+2. rename `logformat-windows-x86_64.exe` to `logformat.exe`
+3. move to windows System32 directory `C:\Windows\System32`
+
+Uninstall: just remove `C:\Windows\System32\logformat.exe`
+
 ## Compile from source
 Compilation require rust to be installed first, see [detail](https://www.rust-lang.org/learn/get-started).  
 About rust version:
@@ -74,6 +103,10 @@ Build operations now are available to run:
 > cargo run --release
 ```
 Binary executable file will be generated to `target/release/logformat`
+```bash
+> file target/release/logformat
+target/release/logformat: Mach-O 64-bit executable x86_64
+```
 
 ## License
 
