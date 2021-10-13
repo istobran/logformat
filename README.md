@@ -80,8 +80,8 @@ rm -f /usr/local/bin/logformat
 
 **Windows**:
 1. Go [Release](https://github.com/istobran/logformat/releases) page and download `logformat-windows-x86_64.exe`
-2. rename `logformat-windows-x86_64.exe` to `logformat.exe`
-3. move to windows System32 directory `C:\Windows\System32`
+2. Rename `logformat-windows-x86_64.exe` to `logformat.exe`
+3. Move to windows System32 directory `C:\Windows\System32`
 
 Uninstall: just remove `C:\Windows\System32\logformat.exe`
 
